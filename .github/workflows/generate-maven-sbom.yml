@@ -3,10 +3,10 @@ name: Generate Maven SBOM
 on:
   push:
     branches: 
-      - "main"
+      - "master"
       - "sbom-test"
-    paths:
-      - 'pom.xml'
+    # paths:
+    #   - 'pom.xml'
     tags:
       - "v*"
   workflow_dispatch:
